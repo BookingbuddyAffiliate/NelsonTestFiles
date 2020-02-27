@@ -122,15 +122,13 @@
         sc += '"sub_3": "t~' + traqparam + '",';
         sc += '"data": {';
         sc += '"num_adults": ' + adult + ',';
+        
         sc += '"flights": [{';
         sc += '"origin": "' + rorig + '",';
         sc += '"destination": "' + rdest + '",';
         sc += '"date": "' + rdepart + '"}';
 
-        sc += '"_design_conf": {';
-        sc += '"flight": {';
-	sc += '"placement_id": "y3zXJdTJ9-06a8IDgKkjFKW-X2_i4Q"}';
-        }';
+        
 
         if (creturn != '') {
             sc += ',{"origin": "' + rdest + '",';
