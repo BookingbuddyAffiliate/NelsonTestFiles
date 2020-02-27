@@ -87,7 +87,7 @@
             cdepart = param['depart'];
             creturn = param['return'];
             adult = param['adult'];
-            source = param['source'];
+            source = param['source '];
             traqparam = param['traqparam'];
         }
         else if (getCookie('rorig') != undefined) {
@@ -132,8 +132,8 @@
           sc += '"placement_id": "-f_AwevGdDIV2v5Ht7Cao09DAGqD8g"';
           sc += '}';
         sc += '},';
-        sc += '"sub_2": "t~' + traqparam + '",';
-        sc += '"sub_3": "' + source + '",';
+        sc += '"sub_2": "' + source + '",';
+        sc += '"sub_3": "t~' + traqparam + '",';
         sc += '"data": {';
         sc += '"num_adults": ' + adult + ',';
         sc += '"flights": [{';
@@ -154,7 +154,7 @@
 
         //console.log(sc);
         var script = document.createElement('script');
-        script.type = 'text/javascript';TE
+        script.type = 'text/javascript';
         script.innerHTML = sc;
         document.body.appendChild(script);
     }
