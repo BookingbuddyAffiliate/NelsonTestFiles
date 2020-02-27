@@ -127,10 +127,15 @@
         sc += '"destination": "' + rdest + '",';
         sc += '"date": "' + rdepart + '"}';
 
+        sc += '"_design_conf": {';
+        sc += '"flight": {';
+	sc += '"placement_id": "y3zXJdTJ9-06a8IDgKkjFKW-X2_i4Q"}';
+        }';
+
         if (creturn != '') {
             sc += ',{"origin": "' + rdest + '",';
             sc += '"destination": "' + rorig + '",';
-            sc += '"date": "' + rreturn + '"}';
+            sc += '"date": "' + rreturn + '"}';';
         }
 
         sc += '],';
